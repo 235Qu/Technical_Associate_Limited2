@@ -1,0 +1,53 @@
+/* Basic reset for the navbar */
+.navbar {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    padding: 15px 20px; /* Padding for top and sides */
+    display: flex;
+    justify-content: space-between; /* Align logo to the left and links to the right */
+    align-items: center; /* Vertically center the items */
+    box-sizing: border-box;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif; /* You can change the font */
+  }
+  
+  .menu {
+    display: flex;
+    gap: 20px; /* Spacing between the links */
+  }
+  
+  .menu a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Font size for links */
+    padding: 10px 15px; /* Padding around the links */
+    border-radius: 5px; /* Rounded corners for the links */
+    transition: background-color 0.3s ease; /* Smooth transition for background color on hover */
+  }
+  
+  .menu a:hover {
+    background-color: #555; /* Darken the background on hover */
+    text-decoration: underline; /* Optional: underline links on hover */
+  }
+  
+  /* Optional: Add a responsive design for mobile screens */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack items vertically on small screens */
+      text-align: center; /* Center the text */
+    }
+  
+    .menu {
+      flex-direction: column; /* Stack links vertically */
+      gap: 10px; /* Reduce gap on small screens */
+    }
+  
+    .menu a {
+      padding: 8px 12px; /* Reduce padding for smaller screens */
+    }
+  }
+  
